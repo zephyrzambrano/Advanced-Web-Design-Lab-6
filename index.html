@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    
+<!--
+*INSTRUCTIONS*
+1. Create an HTML document to work with, that has a <div> with the id “wordsOfWisdom”.
+2. Fill an Array full with Strings of random esoteric knowledge. (Keep it classy, guys.)
+3. When the page loads, have one of those sayings placed into the wordsOfWisdom <div>.
+4. Have a button below it that, when clicked, swaps in a new saying or refreshes the page.
+5. Style the page so it looks nice! (Hit me with your best shot!)
+-->
+    
+    <head>
+        <title>Lab 6</title>
+    </head>
+
+    <body>
+        
+        <style>
+            #refreshButton {
+                
+            }
+            
+            #wordsOfWisdom {
+                
+            }
+            
+        </style>
+        
+        
+        <script>
+            
+            var max=20;
+            
+            //20 phrases total 
+            var phraseList=[
+                //REPLACE NUMBERS WITH PHRASES
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19"
+            ];
+            
+            var phrase=phraseList[Math.floor(Math.random()*max)];
+            document.write(phrase);
+            
+        </script>
+        
+        
+        
+        <!-- put html below -->
+        <div id=wordsOfWisdom>
+            
+        </div>
+        
+        <!--Reload button source: https://www.quackit.com/javascript/javascript_refresh_page.cfm-->
+        <input type="button" id="refreshButton" value="Reload Page" onClick="document.location.reload(true)">
+        
+    </body>
+</html>
