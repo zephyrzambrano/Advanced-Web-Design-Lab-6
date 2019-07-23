@@ -22,45 +22,53 @@
             }
             
             #wordsOfWisdom {
-                
+                font-size: 200px;
+				color: blue;
             }
+			
+			
             
         </style>
         
-        
         <script>
             
-            var max=20;
+			onload=function() {
+			
+				var max=20;
             
-            //20 phrases total 
-            var phraseList=[
-                //REPLACE NUMBERS WITH PHRASES
-                "0",
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7",
-                "8",
-                "9",
-                "10",
-                "11",
-                "12",
-                "13",
-                "14",
-                "15",
-                "16",
-                "17",
-                "18",
-                "19"
-            ];
+				//20 phrases total 
+				var phraseList=[
+					//REPLACE NUMBERS WITH PHRASES
+					"0",
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19"
+				];
             
-            var phrase=phraseList[Math.floor(Math.random()*max)];
-            document.write(phrase);
+				var phrase=phraseList[Math.floor(Math.random()*max)];
+			
+				var display=document.getElementById('wordsOfWisdom');
+				display.innerHTML=phrase;
+			}
             
         </script>
+        
         
         
         
