@@ -37,6 +37,8 @@
                 background-image: url(slide_335311_3372095_free.jpg);
                 background-repeat: no-repeat;
                 background-size:2400px 1394px;
+
+
             }
 			
 			
@@ -45,6 +47,72 @@
         
         <script>
             
+
+			onload=function() {
+			
+				var max=20;
+			
+				//Phrase Source: http://www.fortunecookiemessage.com/archive.php
+				//20 phrases total 
+				
+				//first half of the sentence
+				var phraseList1=[
+					"Today it's up to you to ",
+					"A good way to keep healthy is to ",
+					"Now is the time to ",
+					"When fear hurts you, ",
+					"For success today, ",
+					"When all else seems to fail, ",
+					"If you feel you are right, ",
+					 "Stop thinking about the road not taken and ",
+					 "If you never expect anything ",
+					 "Stop searching forever, ",
+					 "Aim high, ",
+					 "You are what you are; ",
+					 "You've got what it takes, ",
+					 "Hard work pays off in the future, ",
+					 "You learn from your mistakes... ",
+					 "If you refuse to accept anything but the best, ",
+					 "Change can hurt, ",
+					 "If you have something good in your life, ",
+					 "Be on the lookout for coming events; They cast their shadows beforehand.",
+					 "You will be hungry soon, "
+				];
+				
+				//second half of the sentence
+				var phraseList2=[
+					 "create the peacefulness you long for.",
+					 "eat more Chinese food.",
+					 "try something new.",
+					 "conquer it and defeat it!",
+					 "look first to yourself.",
+					 "smile for today and just love someone.",
+					 "stand firmly by your convictions.",
+					 "pave over the one you did.",
+					 "you can never be disappointed.",
+					 "happiness is just next to you.",
+					 "time flies.",
+					 "understand yourself before you react.",
+					 "but it will take everything you've got!",
+					 "laziness pays off now.",
+					 "You will learn a lot today.",
+					 "you very often get it.",
+					 "but it leads a path to something better.",
+					 "don't let it go!",
+					 "They cast their shadows beforehand.",
+					 "order takeout now."
+				];
+				
+				
+            
+				var part1=phraseList1[Math.floor(Math.random()*max)];
+				var part2=phraseList2[Math.floor(Math.random()*max)];
+				var phrase=phrase1+phrase2;
+				
+				var display=document.getElementById('wordsOfWisdom');
+				display.innerHTML=phrase;
+			}
+
             
         </script>
         
