@@ -21,10 +21,17 @@
             
             #refreshButton {
                 margin-left:47%; 
-                margin-top: 500px;
+                margin-top: 350px;
    	            width:150px;
    	            bottom:280px;
                 
+                font-size: 20px;
+                font-family: 'Pacifico', cursive;
+                
+                width: 200px;
+                
+                border-radius: 10px;
+                background-color: #EDAB4A;
             }
             
             #wordsOfWisdom {
@@ -32,7 +39,7 @@
 				color: black;
                 font-family: 'Pacifico', cursive;
                 position: relative;
-                top:215px;
+                top:125px;
 
                 left:155px;
 
@@ -52,10 +59,24 @@
             
             @keyframes fadeIn {
                 0% {
+                  opacity: 0;  
+                }
+                50% {
                     opacity: 0;
                 }
                 100% {
                     opacity: 1;
+                }
+            }
+            
+            @keyframes zoomIn {
+                0% {
+                    background-size: 0px 0px;
+                    font-size: 0px;
+                }
+                50% {
+                    background-size: 800px 464.67px;
+                    font-size: 32px;
                 }
             }
             
@@ -81,6 +102,18 @@
                 background-position:top;
                 margin-left:auto;
                 margin-right:auto;
+                
+                animation: 1s zoomIn;
+            }
+            
+            body h1 {
+                text-align: center;
+                font-family: 'Pacifico', cursive;
+                animation: 1s zoomIn;
+                font-size: 32px;
+                
+                height:60px;
+                overflow:hidden;
             }
             
         </style>
@@ -142,8 +175,6 @@
 					 "They cast their shadows beforehand.",
 					 "order takeout now."
 				];
-				
-				
             
 				var part1=phraseList1[Math.floor(Math.random()*max)];
 				var part2=phraseList2[Math.floor(Math.random()*max)];
@@ -152,10 +183,10 @@
 				var display=document.getElementById('wordsOfWisdom');
 				display.innerHTML=phrase;
 			}
-
-            
+   
         </script>
         
+        <h1>Check Your Fortune!</h1>
         
         
         
