@@ -47,7 +47,31 @@
                 height:60px;
                 overflow:hidden;
                 
+                animation: 1s fadeIn;
             }
+            
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            /*https://codepen.io/kianoshp/pen/PPeWzb*/
+            /*@keyframes fadeInOut {
+                0% {
+                    opacity: 0;
+                }
+                45% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0%;
+                }
+            }*/
+            
             body {
                 background-image: url(slide_335311_3372095_free.jpg);
                 background-repeat: no-repeat;
@@ -57,8 +81,6 @@
                 background-position:top;
                 margin-left:auto;
                 margin-right:auto;
-                
-
             }
             
         </style>
